@@ -1,0 +1,32 @@
+{
+  "name": "2021-golf-api-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:migrate": "npx sequelize db:migrate --env development --config ./configs/sequelize.js",
+    "dev:migrate:undo": "npx sequelize-cli db:migrate:undo --env development --config ./configs/sequelize.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinSalina/2021-golf-api-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinSalina/2021-golf-api-app/issues"
+  },
+  "homepage": "https://github.com/KevinSalina/2021-golf-api-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
